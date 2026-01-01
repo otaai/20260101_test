@@ -1,8 +1,7 @@
 # 20260101_test
 
 こちらのサイトは演習用の雛形サンプルファイルです。
-用いた画像は以下
-
+用いた画像は以下サイトからダウンロードしたものです。
 
 Minimal Marble Table With Wooden Candle Holders and Magazine
 https://kaboompics.com/photo/37020/Minimal%20Marble%20Table%20With%20Wooden%20Candle%20Holders%20and%20Magazine
