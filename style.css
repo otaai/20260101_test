@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* Googlefont-------------------------------- */
+/* Noto Sans Japanese*/
+/* Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+
+/*------------------------------*/
+/* 全ページ共有設定 */
+
+/* カスタムプロパティ(変数) */
+/* 使う時は、var(--color1) */
+:root{
+	--color1:ghostwhite;
+	--color2:slategray;
+}
+
+.wrapper{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+body{
+	background-color: ghostwhite;
+
+	/*デフォルトのフォント*/
+	/*googlefont noto+sans+jp*/
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+	font-weight:200;
+	font-style: normal;
+}
+
+/*googlefont montserrat*/
+.montserrat{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+header{
+	width: 100vw;
+	padding: 50px;
+	color: ghostwhite;
+	background-color: slategray;
+}
+
+main{
+	padding: 50px;
+	color: #444;
+}
+
+footer{
+	width: 100vw;
+	height: 100px;
+	padding-top: 30px;
+	color: ghostwhite;
+	background-color: slategray;
+}
+
+footer p{
+	text-align: center;
+}
+
+nav ul{
+	display: flex;
+	margin-top: 20px;
+}
+
+nav li{
+	margin-right: 20px;
+	list-style: none;
+}
+
+nav a{
+	display: block;
+
+	width: 100px;
+	padding: 10px;
+
+	text-decoration: none;
+	text-align: center;
+	background-color: ghostwhite;
+	color: slategray;
+	border: 1px solid slategray;
+}
+
+nav a:hover{
+	color: ghostwhite;
+	background-color: slategrey;
+	border: 1px solid ghostwhite;
+}
+
+img{
+	width: 100%
+}
+
+
+/*------------------------------------------------------------*/
+/* 01.html専用*/
+
+.fullscreenbg{
+	background-image: url(img/01.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 40vh;
+	background-color: slategrey;
+	background-blend-mode: luminosity;
+}
+
+.fullscreenbg p{
+	color: ghostwhite;
+}
+
+.fullscreenbg h1{
+	font-size: 4rem;
+	color: white;
+}
+
+
+
+/*------------------------------------------------------------*/
+/* 02.html専用 */
+
+/*2つ目以降のh2タグ*/
+main h2:nth-child(n+2){
+	margin-top: 50px;
+}
+
+
+
+/*------------------------------------------------------------*/
+/* 03.html専用*/
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+
+/*03v2.html用*/
+/*
+main{
+	background-color: slategray;
+}
+
+.item{
+	background-color: ghostwhite;
+	padding: 10px;
+}
+
+.item p{
+	color: slategray;
+	text-align: center;
+	font-weight:400;
+}
+*/
